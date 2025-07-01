@@ -1,0 +1,136 @@
+/* CSS Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: a;
+  src: url(./Raleway-VariableFont_wght.ttf);
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-left {
+  height: 60px;
+  width: 200px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+#nav-right {
+  height: 60px;
+  width: 550px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#circle1 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 2px;
+}
+#circle2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+#btm-nav {
+  height: 60px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: a;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 45px;
+}
+#content {
+  height: calc(100% - 120px);
+  width: 100%;
+}
+#content-text {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: nowrap;
+  display: flex;
+  overflow-x: scroll;
+}
+#content-text::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+}
+#content-text::-webkit-scrollbar-thumb {
+  background-color: rgb(241, 124, 15);
+}
+
+.elem {
+  background-color: #fff;
+  height: 100%;
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.elem h1 {
+  font-family: a;
+  font-size: 100px;
+  font-weight: 400;
+}
+#btm-cnt {
+  width: 100%;
+
+  height: auto;
+
+  display: flex;
+
+  overflow-x: auto;
+
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+}
+#btm-cnt img {
+  width: 100%;
+  /* Fixed width */
+
+  height: 600px;
+  /* Adjust if needed */
+
+  object-fit: cover;
+
+  object-position: center;
+
+  scroll-snap-align: center;
+
+  flex-shrink: 0;
+}
+
+#btm-cnt::-webkit-scrollbar {
+  background-color: transparent;
+  height: 0px;
+}
